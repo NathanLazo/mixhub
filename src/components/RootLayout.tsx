@@ -63,12 +63,7 @@ function Header({
   return (
     <Container>
       <div className='flex items-center justify-between'>
-        <Link
-          href='/'
-          aria-label='Home'
-          onMouseEnter={() => setLogoHovered(true)}
-          onMouseLeave={() => setLogoHovered(false)}
-        >
+        <Link href='/' aria-label='Home'>
           <Logomark
             className='h-8 sm:hidden'
             invert={invert}
@@ -195,8 +190,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             expanded={expanded}
             onToggle={() => {
               setExpanded((expanded) => !expanded);
-              window.setTimeout(() =>
-                closeRef.current?.focus({ preventScroll: true })
+              window.setTimeout(
+                () => closeRef.current?.focus({ preventScroll: true })
               );
             }}
           />
@@ -221,8 +216,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 expanded={expanded}
                 onToggle={() => {
                   setExpanded((expanded) => !expanded);
-                  window.setTimeout(() =>
-                    openRef.current?.focus({ preventScroll: true })
+                  window.setTimeout(
+                    () => openRef.current?.focus({ preventScroll: true })
                   );
                 }}
               />

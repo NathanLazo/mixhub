@@ -113,7 +113,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    "We are a development studio working at the intersection of design and technology.",
+    "Mixhub! is a web3 marketplace where people can enjoy their music in a whole new experience.",
 };
 
 export default async function Home() {
@@ -122,12 +122,11 @@ export default async function Home() {
       <Container className='mt-24 sm:mt-32 md:mt-56'>
         <FadeIn className='max-w-3xl'>
           <h1 className='font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl'>
-            Award-winning development studio based in Denmark.
+            A new experience to taste the music
           </h1>
           <p className='mt-6 text-xl text-neutral-600'>
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            We are a web3 marketplace where people can enjoy their music in a
+            whole new experience.
           </p>
         </FadeIn>
       </Container>

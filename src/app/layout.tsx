@@ -5,10 +5,10 @@ import { RootLayout } from "~/components/RootLayout";
 import "~/styles/tailwind.css";
 
 export const metadata: Metadata = {
-  title: "CryptoBloom",
-  description: "CryptoBloom is a business suite for crypto businesses.",
+  title: "Mixhub!",
+  description:
+    "Mixhub! is a web3 marketplace where people can enjoy their music in a whole new experience.",
   manifest: "/manifest.json",
-  themeColor: "#ffffff",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
