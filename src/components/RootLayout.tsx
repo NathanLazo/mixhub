@@ -20,6 +20,7 @@ import { GridPattern } from "~/components/home/GridPattern";
 import { Logo } from "~/components/home/Logo";
 import { Offices } from "~/components/home/Offices";
 import { SocialMedia } from "~/components/home/SocialMedia";
+import ConnectWallet from "./web3/ConnectWallet";
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean;
@@ -64,11 +65,11 @@ function Header({
     <Container>
       <div className='flex items-center justify-between'>
         <Link href='/' aria-label='Home'>
-          <Logo />
+          <Logo invert={invert} />
         </Link>
         <div className='flex items-center gap-x-8'>
-          <Button href='/contact' invert={invert}>
-            Connect wallet
+          <Button invert={invert}>
+            <ConnectWallet />
           </Button>
           <button
             ref={toggleRef}
@@ -129,11 +130,11 @@ function Navigation() {
   return (
     <nav className='mt-px font-display text-5xl font-medium tracking-tight text-white'>
       <NavigationRow>
-        <NavigationItem href='/about'>Create</NavigationItem>
-        <NavigationItem href='/work'>List</NavigationItem>
+        <NavigationItem href='/'>Create</NavigationItem>
+        <NavigationItem href='/'>List</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href='/process'>Market</NavigationItem>
+        <NavigationItem href='/'>Market</NavigationItem>
         <NavigationItem href='https://www.xnft.gg/app/6ogcRWAffccJEhEVHyXAfrbGZyCtFuMRSps6rEX6xaJZ'>
           Install mixhub!
         </NavigationItem>
