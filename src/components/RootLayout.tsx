@@ -17,7 +17,7 @@ import { Button } from "~/components/home/Button";
 import { Container } from "~/components/home/Container";
 import { Footer } from "~/components/home/Footer";
 import { GridPattern } from "~/components/home/GridPattern";
-import { Logo, Logomark } from "~/components/home/Logo";
+import { Logo } from "~/components/home/Logo";
 import { Offices } from "~/components/home/Offices";
 import { SocialMedia } from "~/components/home/SocialMedia";
 
@@ -64,20 +64,11 @@ function Header({
     <Container>
       <div className='flex items-center justify-between'>
         <Link href='/' aria-label='Home'>
-          <Logomark
-            className='h-8 sm:hidden'
-            invert={invert}
-            filled={logoHovered}
-          />
-          <Logo
-            className='hidden h-8 sm:block'
-            invert={invert}
-            filled={logoHovered}
-          />
+          <Logo />
         </Link>
         <div className='flex items-center gap-x-8'>
           <Button href='/contact' invert={invert}>
-            Contact us
+            Connect wallet
           </Button>
           <button
             ref={toggleRef}
@@ -138,12 +129,14 @@ function Navigation() {
   return (
     <nav className='mt-px font-display text-5xl font-medium tracking-tight text-white'>
       <NavigationRow>
-        <NavigationItem href='/work'>Our Work</NavigationItem>
-        <NavigationItem href='/about'>About Us</NavigationItem>
+        <NavigationItem href='/about'>Create</NavigationItem>
+        <NavigationItem href='/work'>List</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href='/process'>Our Process</NavigationItem>
-        <NavigationItem href='/blog'>Blog</NavigationItem>
+        <NavigationItem href='/process'>Market</NavigationItem>
+        <NavigationItem href='https://www.xnft.gg/app/6ogcRWAffccJEhEVHyXAfrbGZyCtFuMRSps6rEX6xaJZ'>
+          Install mixhub!
+        </NavigationItem>
       </NavigationRow>
     </nav>
   );
