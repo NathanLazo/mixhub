@@ -130,8 +130,8 @@ function Navigation() {
   return (
     <nav className='mt-px font-display text-5xl font-medium tracking-tight text-white'>
       <NavigationRow>
-        <NavigationItem href='/'>Create</NavigationItem>
-        <NavigationItem href='/'>List</NavigationItem>
+        <NavigationItem href='/create'>Create</NavigationItem>
+        <NavigationItem href='/about'>List</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href='/'>Market</NavigationItem>
