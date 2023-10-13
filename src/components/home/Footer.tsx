@@ -6,29 +6,32 @@ import { Logo } from "~/components/home/Logo";
 import { socialMediaProfiles } from "~/components/home/SocialMedia";
 
 const navigation = [
-  {
-    title: "Work",
-    links: [
-      { title: "FamilyFund", href: "/work/family-fund" },
-      { title: "Unseal", href: "/work/unseal" },
-      { title: "Phobia", href: "/work/phobia" },
-      {
-        title: (
-          <>
-            See all <span aria-hidden='true'>&rarr;</span>
-          </>
-        ),
-        href: "/work",
-      },
-    ],
-  },
+  // {
+  //   title: "Work",
+  //   links: [
+  //     { title: "FamilyFund", href: "/work/family-fund" },
+  //     { title: "Unseal", href: "/work/unseal" },
+  //     { title: "Phobia", href: "/work/phobia" },
+  //     {
+  //       title: (
+  //         <>
+  //           See all <span aria-hidden='true'>&rarr;</span>
+  //         </>
+  //       ),
+  //       href: "/home",
+  //     },
+  //   ],
+  // },
   {
     title: "Company",
     links: [
-      { title: "About", href: "/about" },
-      { title: "Process", href: "/process" },
-      { title: "Blog", href: "/blog" },
-      { title: "Contact us", href: "/contact" },
+      { title: "Create", href: "/create" },
+      { title: "List", href: "/list" },
+      { title: "Marketplace", href: "/market" },
+      {
+        title: "Install Mixhub",
+        href: "https://www.xnft.gg/app/6ogcRWAffccJEhEVHyXAfrbGZyCtFuMRSps6rEX6xaJZ",
+      },
     ],
   },
   {
@@ -125,7 +128,7 @@ export function Footer() {
             <Logo />
           </Link>
           <p className='text-sm text-neutral-700'>
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Mixhub! {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

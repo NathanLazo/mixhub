@@ -131,10 +131,10 @@ function Navigation() {
     <nav className='mt-px font-display text-5xl font-medium tracking-tight text-white'>
       <NavigationRow>
         <NavigationItem href='/create'>Create</NavigationItem>
-        <NavigationItem href='/about'>List</NavigationItem>
+        <NavigationItem href='/list'>List</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href='/'>Market</NavigationItem>
+        <NavigationItem href='/market'>Market</NavigationItem>
         <NavigationItem href='https://www.xnft.gg/app/6ogcRWAffccJEhEVHyXAfrbGZyCtFuMRSps6rEX6xaJZ'>
           Install mixhub!
         </NavigationItem>
