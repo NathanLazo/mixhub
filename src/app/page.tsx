@@ -59,7 +59,7 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow='Services'
+        eyebrow='Advantages'
         title='Your Gateway to Exclusive Music'
         className='mt-24 sm:mt-32 lg:mt-40'
       >
