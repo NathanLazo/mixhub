@@ -128,7 +128,7 @@ export function Footer() {
             <Logo />
           </Link>
           <p className='text-sm text-neutral-700'>
-            © Mixhub! {new Date().getFullYear()}
+            © mixhub! {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

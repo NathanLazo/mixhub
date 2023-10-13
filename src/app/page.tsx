@@ -108,7 +108,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    "Mixhub! is a web3 marketplace where people can enjoy their music in a whole new experience.",
+    "mixhub! is a web3 marketplace where people can enjoy their music in a whole new experience.",
 };
 
 export default async function Home() {
