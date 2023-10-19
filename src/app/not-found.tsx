@@ -20,7 +20,7 @@ export default function NotFound() {
           href='/'
           className='mt-4 text-sm font-semibold text-neutral-950 transition hover:text-neutral-700'
         >
-          Go to the home page
+          Go to the home page :)
         </Link>
       </FadeIn>
     </Container>
