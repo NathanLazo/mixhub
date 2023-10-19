@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "Mixhub! is a web3 marketplace where people can enjoy their music in a whole new experience.",
   manifest: "/manifest.json",
+  openGraph: {
+    images: [
+      "https://pbs.twimg.com/profile_images/1709416310633811968/XT2Osy0s_400x400.jpg",
+    ],
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

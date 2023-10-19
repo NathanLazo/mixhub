@@ -1,15 +1,7 @@
-import { type Metadata } from "next";
-import Image from "next/image";
-
-import { Border } from "~/components/home/Border";
 import { ContactSection } from "~/components/home/ContactSection";
-import { Container } from "~/components/home/Container";
-import { FadeIn, FadeInStagger } from "~/components/home/FadeIn";
-import { GridList, GridListItem } from "~/components/home/GridList";
+
 import { PageIntro } from "~/components/home/PageIntro";
-import { PageLinks } from "~/components/home/PageLinks";
-import { SectionIntro } from "~/components/home/SectionIntro";
-import { StatList, StatListItem } from "~/components/home/StatList";
+
 import { Button } from "~/components/ui/button";
 import {
   Card,
@@ -21,14 +13,6 @@ import {
 } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
-import clsx from "clsx";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 
 export default async function Create() {
   return (
@@ -53,11 +37,15 @@ export default async function Create() {
                 <div className='flex flex-col space-y-4'>
                   <Label htmlFor='title'>Song title</Label>
                   <Input id='title' placeholder='Name of your song' />
-                  <Label htmlFor='name'>Artist name</Label>
-                  <Input id='artist' placeholder='Name of your artist' />
-                  <Label htmlFor='name'>Genre</Label>
+                  <Label htmlFor='artist'>Artist name</Label>
+                  <Input
+                    id='artist'
+                    type='title'
+                    placeholder='Name of your artist'
+                  />
+                  <Label htmlFor='genre'>Genre</Label>
                   <Input id='genre' placeholder='Genre' />
-                  <Label htmlFor='name'>Description</Label>
+                  <Label htmlFor='description'>Description</Label>
                   <Input id='description' placeholder='Description' />
                   <Label htmlFor='file'>Song audio</Label>
                   <Input
